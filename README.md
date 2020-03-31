@@ -22,6 +22,8 @@ Once everything has started you can visit `http://localhost:3000` to login to Gr
 
 The username and password are both `admin`.
 
+### Connecting to TimescaleDB
+
 If you'd like to connect directly to TimescaleDB use `psql`:
 
 ```
