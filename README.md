@@ -1,6 +1,6 @@
 # Docker Environment for Wikistream
 
-This is a demo environment for Wikistream, a Python package to stream Wikimedia edits (['wikistream'](https://github.com/timescale/wikistream)).
+This is a demo environment for Wikistream, a Python package to stream Wikimedia edits ([https://github.com/timescale/wikistream](https://github.com/timescale/wikistream)).
 
 It includes TimescaleDB, Grafana and Wikistream as three services in a `docker-compose.yml` file.
 
