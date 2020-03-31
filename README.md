@@ -54,7 +54,12 @@ with your new and improved dashboard and send us a [pull request](https://help.g
 
 ## Troubleshooting
 
-If you're having issues getting up and running [submit an issue](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue)
+##### `LOG:  could not bind IPv4 socket: Cannot assign requested address`
+
+If you see an error about failing to bind to a socket or something similar it's
+possible you have another instance of PostgreSQL already running. Make sure you've stopped your existing PostgreSQL database and then try `docker-compose up` again.
+
+If you're having any other issues getting up and running [submit an issue](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue)
 or stop by the [Timescale Slack](https://slack.timescale.com/) and ask around for `@avthar` or `@jonan`. We're always happy to help.
 
 🐯 ❤️ 
