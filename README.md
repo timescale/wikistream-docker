@@ -1,4 +1,4 @@
-# Docker Environment for Wikistream
+# Docker Environment for Wikistream 📚🚰 
 
 This is a demo environment for Wikistream, a Python package to stream Wikimedia edits ([timescale/wikistream](https://github.com/timescale/wikistream)).
 
