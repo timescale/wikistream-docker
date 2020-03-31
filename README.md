@@ -41,13 +41,11 @@ If you discover an interesting query in Grafana please consider sharing your das
 
 You can export the entire dashboard as a JSON file from Grafana by clicking "Share dashboard":
 
-![Image of Share Link in Grafana]
-(https://user-images.githubusercontent.com/270746/78011390-5fa00580-72f8-11ea-9d9c-5112042f6849.png)
+![Image of Share Link in Grafana](https://user-images.githubusercontent.com/270746/78011390-5fa00580-72f8-11ea-9d9c-5112042f6849.png)
 
 Then select the "Export" tab and click "Save to file":
 
-![Image of Save to File Button in Grafana]
-(https://user-images.githubusercontent.com/270746/78011801-efde4a80-72f8-11ea-8ae7-74485e280c43.png)
+![Image of Save to File Button in Grafana](https://user-images.githubusercontent.com/270746/78011801-efde4a80-72f8-11ea-8ae7-74485e280c43.png)
 
 Replace the entire contents of [`grafana/provisioning/dashboards/wikistream.json`](https://github.com/timescale/wikistream-docker/blob/master/grafana/provisioning/dashboards/wikistream.json)
 with your new and improved dashboard and send us a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
