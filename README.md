@@ -18,7 +18,7 @@ Bring up the services with `docker-compose`:
 docker-compose up
 ```
 
-Once everything has started you can visit `http://localhost:3000` to login to Grafana.
+Once everything has started you can visit [`http://localhost:3000`](http://localhost:3000) to login to Grafana.
 
 The username and password are both `admin`.
 
