@@ -1,0 +1,43 @@
+version: "3.7"
+
+volumes:
+  timescaledb_data:
+  grafana_data:
+
+networks:
+  wikistream:
+
+services:
+  timescaledb:
+    image: timescale/timescaledb:latest-pg11
+    volumes:
+      - timescaledb_data:/var/lib/postgres/data
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: wikistream
+      PGDATA: timescaledb_data
+    networks:
+      - wikistream
+
+  wikistream:
+    build: wikistream
+    environment:
+      POSTGRES_HOST: timescaledb
+      POSTGRES_DB: wikistream
+      POSTGRES_PASSWORD: password
+    depends_on:
+      - timescaledb
+    networks:
+      - wikistream
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+    volumes:
+      - grafana_data:/usr/local/var/lib/grafana/data
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    networks:
+      - wikistream
