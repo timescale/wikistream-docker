@@ -1,3 +1,3 @@
-from wikistream import Wikistream
-w = Wikistream({ "host": "timescaledb" })
+import wikistream
+w = wikistream.Client({ "host": "timescaledb" })
 w.start()
